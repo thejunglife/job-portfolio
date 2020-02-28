@@ -1,11 +1,19 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Image from 'react-bootstrap/Image'
+import aboutPic from '../../assets/images/aboutpic.jpg'
+import './about.css'
 
 const About = () => {
 
   return(
-    <>
-    <h1>About Page</h1>
-    </>
+    <Container className="imgAbout">
+      <Image src={aboutPic}roundedCircle className="picAbout" />
+      <div>
+        <h1>Who am I?</h1>
+        <p>A Full Stack Web Developer that is passionate about writing useful code</p>
+      </div>
+    </Container>
   )
 }
 

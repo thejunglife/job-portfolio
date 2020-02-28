@@ -7,15 +7,15 @@ const Home = () => {
 
   return(
     <div className="home">
-  <Jumbotron className="homePage">
-    <h1>Hello World!</h1>
-      <h2>
-        My name is Paul, and I am a Full Stack Web Developer
-      </h2>
-      <p>
-        <Button variant="primary">Learn more</Button>
+      <Jumbotron className="homePage">
+        <h1>Hello World!</h1>
+        <h2>
+          My name is Paul, and I am a Full Stack Web Developer
+        </h2>
+        <p>
+          <Button variant="primary">Learn more</Button>
        </p>
-    </Jumbotron>
+      </Jumbotron>
     </div>
   )
 }

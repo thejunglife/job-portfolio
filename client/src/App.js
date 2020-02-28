@@ -21,18 +21,22 @@ const App = () => {
         <Route path="/about">
           <NavBar />
           <About />
+          <Footer />
         </Route>
         <Route path="/portfolio">
           <NavBar />
           <Portfolio />
+          <Footer />
         </Route>
         <Route path="/resume">
           <NavBar />
           <Resume />
+          <Footer />
         </Route>
         <Route path="/contact">
           <NavBar />
           <Contact />
+          <Footer />
         </Route>
       </Switch>
     </Router>
