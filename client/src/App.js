@@ -6,6 +6,7 @@ import Portfolio from './Pages/Portfolio'
 import Resume from './Pages/Resume'
 import Contact from './Pages/Contact'
 import NavBar from './Components/NavBar'
+import Footer from './Components/Footer'
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/">
           <NavBar />
           <Home />
+          <Footer />
         </Route>
         <Route path="/about">
           <NavBar />
