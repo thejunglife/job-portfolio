@@ -27,7 +27,7 @@ const Resume = () => {
   return(
     <div>
     <h1>Resume</h1>
-    <iframe src={resume} style={divStyle} />
+    <iframe title="resumeFrame" src={resume} style={divStyle} />
     </div>
   )
 }
