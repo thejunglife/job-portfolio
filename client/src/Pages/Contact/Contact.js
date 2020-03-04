@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import axios from 'axios'
+
 
 const Contact = () => {
   const [contactState, setContactState] = useState({
@@ -23,8 +25,25 @@ const Contact = () => {
       email: contactState.email,
       message: contactState.message
     }
-    setContactState({ ...contactState, name: '', email: '', message: ''})
     console.log(sentMessage)
+    
+    axios({
+      method: 'post',
+      url: '/send',
+      data: {
+        name: contactState.name,
+        email: contactState.email,
+        message: contactState.message
+      }
+    })
+      .then((response) => {
+        if (response.data.msg === 'success') {
+          alert("Message Sent.")
+          setContactState({ ...contactState, name: '', email: '', message: ''})
+         } else if (response.data.msg === "fail") {
+           alert("Message failed to send.")
+         }
+      })
   }
 
   return (
