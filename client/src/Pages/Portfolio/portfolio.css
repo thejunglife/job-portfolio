@@ -5,3 +5,7 @@
 .pHeader {
   text-align: center;
 }
+
+.card-img-top {
+  height: 500px;
+}

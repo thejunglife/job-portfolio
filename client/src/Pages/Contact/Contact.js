@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
+import './contact.css'
 
 
 const Contact = () => {
@@ -47,7 +48,9 @@ const Contact = () => {
   }
 
   return (
-    <Form>
+    <Form className="contactPage">
+    <h1 className="contactTitle">CONTACT</h1>
+    <h5 className ="contactLine">Have any questions or want to collabarate?</h5>
       <Form.Group controlId="name">
         <Form.Label>Name</Form.Label>
         <Form.Control
