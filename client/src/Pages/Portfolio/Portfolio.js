@@ -4,16 +4,24 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import './portfolio.css'
-import portPic from '../../assets/images/aboutpic.jpg'
 import harmonize from '../../assets/images/harmonizePic.png'
 import laf from '../../assets/images/lafPic.png'
+import clicky from '../../assets/images/clickyGame.png'
+import Button from 'react-bootstrap/Button'
+import { useHistory } from 'react-router-dom'
 
 const Portfolio = () => {
+  const history = useHistory()
+
+  const visitContact = () => {
+    history.push('/contact')
+  }
 
   return(
+
 <div className="projectPage">
  <Container>
-    <h1>PROJECTS</h1>
+    <h1 className="projectText">PROJECTS</h1>
   <Row>
     <Col sm>
       <Card style={{ width: '100%' }}>
@@ -21,8 +29,7 @@ const Portfolio = () => {
         <Card.Body>
           <Card.Title>Harmonize</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            A social media platform for musicians looking to collaborate with other musicians.
           </Card.Text>
           <Card.Link href="https://harmonizers.herokuapp.com/" target="_blank">Go to app</Card.Link>
         </Card.Body>
@@ -34,27 +41,29 @@ const Portfolio = () => {
         <Card.Body>
           <Card.Title>LAF</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            Full stack application that digitizes Lost and Found for events or businesses.
           </Card.Text>
-          <Card.Link href="https://the-laf-app.herokuapp.com/">Go to app</Card.Link>
+          <Card.Link href="https://the-laf-app.herokuapp.com/" target="_blank">Go to app</Card.Link>
         </Card.Body>
       </Card>
     </Col>
     <Col sm>
       <Card style={{ width: '100%' }}>
-        <Card.Img variant="top" src={portPic} />
+        <Card.Img variant="top" src={clicky} />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>Clicky Game</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            Fun react game try to click a different picture for the highest score!
           </Card.Text>
-          <Card.Link href="#">Another Link</Card.Link>
+          <Card.Link href="https://vast-temple-64190.herokuapp.com/" target="_blank">Go to app</Card.Link>
         </Card.Body>
       </Card>
     </Col>
   </Row>
+  <h5 className="projectText">Lets talk!</h5>
+  <div className="projectBtn">
+  <Button onClick={() => visitContact()}>Contact</Button>
+  </div>
 </Container>
 </div>
   )

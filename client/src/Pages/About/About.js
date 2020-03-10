@@ -14,14 +14,17 @@ const visitPortfolio = () => {
   history.push('/portfolio')
 }
   return(
+  <div className="aboutBack">
+  <h1 className="aboutTitle">ABOUT</h1>
     <Container className="imgAbout">
       <Image src={aboutPic}roundedCircle className="picAbout" />
       <div>
         <h1>Who am I?</h1>
-        <p>A Full Stack Web Developer that is passionate about writing clean and useful code. Aspiring to deliver heightened user experiences to enhance everyday lives. When I am not coding I enjoy working out at the gym, cycling, running, and enjoying a night in watching a movie!</p>
+        <h5>A Full Stack Web Developer that is passionate about writing clean and useful code. Aspiring to deliver heightened user experiences to enhance everyday lives. Currently looking for a full time job and also taking on projects to build my portfolio. When I am not coding I enjoy working out at the gym, cycling, running, and enjoying a night in watching a movie!</h5>
       </div>
       <Button onClick={() => visitPortfolio()}>Portfolio</Button>
     </Container>
+    </div>
   )
 }
 

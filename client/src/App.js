@@ -7,6 +7,7 @@ import Resume from './Pages/Resume'
 import Contact from './Pages/Contact'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
+import './app.css'
 
 const App = () => {
 

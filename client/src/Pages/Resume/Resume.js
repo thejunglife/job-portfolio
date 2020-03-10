@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import resume from '../../assets/images/RESUME.pdf'
+import './resume.css'
 // import { Document, Page, pdfjs } from 'react-pdf/dist/entry.parcel';
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -26,7 +27,7 @@ const Resume = () => {
 // temp fix 
   return(
     <div>
-    <h1>Resume</h1>
+    <h1 className="resumeTitle">RESUME</h1>
     <iframe title="resumeFrame" src={resume} style={divStyle} />
     </div>
   )

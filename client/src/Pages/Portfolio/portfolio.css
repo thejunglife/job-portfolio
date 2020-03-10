@@ -1,11 +1,53 @@
-.projectPage {
-  text-align: center;
-}
+
 
 .pHeader {
   text-align: center;
 }
 
 .card-img-top {
-  height: 500px;
+  width: 100%;
+  object-fit: fill;
+}
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .card-img-top {
+        height: 30vw;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card-img-top {
+        height: 30vw;
+        object-fit: fill;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 30vw;
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 30vw;
+    }
+  }
+
+.projectPage {
+background: url('../../assets/images/backgroundPort.jpg');
+  /* makes background responsive */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectText {
+  text-align: center;
+}
+
+.projectBtn {
+  text-align: center;
 }
