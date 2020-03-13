@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDom from 'react-dom'
+// import ReactDom from 'react-dom'
 import { SocialIcon } from 'react-social-icons'
 import Navbar from 'react-bootstrap/Navbar'
 import './footer.css'

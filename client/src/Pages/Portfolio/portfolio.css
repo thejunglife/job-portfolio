@@ -31,7 +31,7 @@
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 992px) {
     .card-img-top {
-        height: 30vw;
+        height: 20vw;
     }
   }
 
