@@ -19,7 +19,7 @@ const Home = () => {
           My name is Paul Jung, and I am a Full Stack Web Developer
         </h2>
         <p>
-          <Button onClick={() => visitAbout()} variant="primary">About</Button>
+          <Button variant="primary"> <a href="#about">About</a></Button>
        </p>
       </Jumbotron>
     </div>

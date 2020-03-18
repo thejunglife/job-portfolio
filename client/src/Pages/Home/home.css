@@ -1,7 +1,7 @@
 .home {
   background: url('../../assets/images/homepage.jpg');
   /* makes background responsive */
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

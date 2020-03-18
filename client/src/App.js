@@ -13,33 +13,25 @@ const App = () => {
 
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <NavBar />
+      <NavBar />
+      <div>
+        <section id="/">
           <Home />
-          <Footer />
-        </Route>
-        <Route path="/about">
-          <NavBar />
+        </section>
+        <section id="about">
           <About />
-          <Footer />
-        </Route>
-        <Route path="/portfolio">
-          <NavBar />
+        </section>
+        <section id="portfolio">
           <Portfolio />
-          <Footer />
-        </Route>
-        <Route path="/resume">
-          <NavBar />
+        </section>
+        <section id="resume">
           <Resume />
-          <Footer />
-        </Route>
-        <Route path="/contact">
-          <NavBar />
+        </section>
+        <section id="contact">
           <Contact />
+        </section>
           <Footer />
-        </Route>
-      </Switch>
+      </div>
     </Router>
   );
 }
